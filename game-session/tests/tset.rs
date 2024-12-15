@@ -151,7 +151,7 @@ fn test_lose_timeout() {
         .source(GAME_SESSION_PROGRAM_ID)
         .payload(GameSessionEvent::StartSuccess);
 
-    //     let result = system.spend_blocks(200);
+    let result = system.spend_blocks(200);
     println!("{:?}", result);
     let _log = Log::builder()
         .dest(USER)
